@@ -37,7 +37,7 @@ def self.create (name:,grade:)
   new_student = self.new(name,grade)
   new_student.save
   new_student
-end  
+end
 
 
 def self.drop_table
@@ -45,7 +45,7 @@ def self.drop_table
     DROP TABLE students
     SQL
   DB[:conn].execute(sql)
-  
+
 end
 
 end
